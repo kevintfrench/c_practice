@@ -1,3 +1,5 @@
+/* Pluralsight's first C assignment */
+
 #include <stdio.h>
 
 
