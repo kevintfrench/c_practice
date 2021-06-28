@@ -12,8 +12,8 @@ int main(void) {
 
 	printf("What is your name? ");
 
-	char[40];
-	scanf("%39", name);
+	char name[40];
+	scanf("%39s", name);
 
 	/*
 	*<name> is learning C
@@ -22,8 +22,8 @@ int main(void) {
 	char message[100];  /*Destination String*/
 
 	strcpy_s(message, sizeof(message), name );
-	strcpy_s(message, sizeof(message), "is" );
-	strcpy_s(message, sizeof(message), "learning C." );
+	strcat_s(message, sizeof(message), " is " );
+	strcat_s(message, sizeof(message), "learning C." );
 
 	/* print out message */
     puts(message);
