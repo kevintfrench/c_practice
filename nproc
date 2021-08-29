@@ -1,0 +1,4 @@
+#!/bin/sh
+nproc=$(ps | wc -l)
+echo "You are running $nproc processes"
+exit 0
